@@ -1,0 +1,113 @@
+@import "vars";
+
+/*============ COMMON ============*/
+html {
+  @media only screen and (max-width: 1080px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $font-family-main;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+section {
+  padding: 0 calc(50% - 648px);
+  height: 100vh;
+  @media only screen and (max-width: 1400px) {
+    padding: 0 calc(50% - 525px);
+  }
+  @media only screen and (max-width: 1080px) {
+    padding: 0 calc(50% - 460px);
+  }
+  @media only screen and (max-width: 960px) {
+    padding: 0 calc(50% - 340px);
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 0 calc(50% - 340px);
+  }
+  @media only screen and (max-width: $media-mob) {
+    padding: 0 15px;
+  }
+  @media screen and (min-width: $media-mob) and (orientation:portrait){
+    height: 50vh;
+  }
+}
+
+.base-btn {
+  background-color: transparent;
+  border: 2px solid $color-accent;
+  color: $color-accent;
+  padding: .5rem 3rem;
+  border-radius: 3px;
+  transition: all .3s linear;
+  font-size: 16px;
+  &:hover {
+    color: $color-main;
+    border-color: $color-main;
+  }
+}
+
+.base-heading-xl {
+  font-size: 4.5rem;
+  font-weight: bold;
+  @media only screen and (max-width: 960px){
+    font-size: 3rem;
+  }
+}
+
+.base-heading {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.base-heading-sm {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.base-text {
+  font-family: $font-family-main;
+  line-height: 1.5rem;
+}
+
+
+/*============ FLEX GRID ============*/
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
