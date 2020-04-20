@@ -10,9 +10,9 @@
     padding: 4% 0;
   }
   &__logo {
-    margin-right: auto;
-    font-size: 1.25rem;
+    font-size: 18px;
     font-weight: bold;
+    white-space: nowrap;
   }
   &__menu-burger {
     transition: all 0.3s;
@@ -89,14 +89,18 @@
     }
   }
   &__item {
-    padding-right: 5%;
+    margin-right: 7%;
     white-space: nowrap;
     font-size: 0.875rem;
     font-family: $font-family-alt;
+    @media only screen and (max-width: 960px){
+      margin-right: 4%;
+    }
     @media only screen and (max-width: $media-mob) {
       font-size: 24px;
       margin-bottom: 25%;
       font-weight: bold;
+      font-family: $font-family-main;
     }
   }
   &__link {
@@ -112,12 +116,13 @@
     flex-direction: column-reverse;
   }
   &__inner {
-    width: 36%;
+    width: 40%;
     height: 100%;
     background-color: #ffffff;
-    padding-right: 6%;
+    padding: 6% 6% 6% 0;
     @media only screen and (max-width: $media-mob) {
       width: 90%;
+      padding: 0;
     }
   }
   &__heading {
@@ -125,6 +130,10 @@
   }
   &__location {
     margin-bottom: 6%;
+    font-size: 1.5rem;
+    @media only screen and (max-width: $media-mob){
+      font-size: 14px;
+    }
   }
   &__info {
     margin-bottom: 8%;
@@ -139,10 +148,39 @@
     background-position: center;
     background-size: cover;
     @media only screen and (max-width: $media-mob) {
+      min-height: 40vh;
       height: 100%;
-      margin: 0 -15px 8%;
+      margin: 0 -15px 10%;
       width: auto;
     }
   }
 }
 
+.services {
+  &__heading {
+    margin-bottom: 2%;
+  }
+  &__description {
+    max-width: 670px;
+    margin-bottom: 4%;
+  }
+  &__item {
+    width: 32.5%;
+    @media only screen and (max-width: $media-mob) {
+      margin-right: 1%;
+    }
+    &-info {
+      padding: 10% 6% 18%;
+    }
+    &-heading {
+      margin-bottom: 6%;
+    }
+    &-point {
+      margin-bottom: 2%;
+    }
+  }
+  &__img {
+    width: 100%;
+    max-width: 421px;
+  }
+}

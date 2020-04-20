@@ -7,19 +7,23 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
-		/>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
   <body>
-    <section class="hero d-flex flex-column">
-      <header class="header d-flex align-center">
+    <section class="hero base-section">
+      <header class="header d-flex align-center justify-between">
         <a href="#" class="header__logo">Wedding Dance</a>
-        <nav  class="menu header__menu d-flex align-center">
-          <h3 class="base-heading-xl menu__heading">Menu</h3>
-          <ul class="menu__list d-flex">
+        <nav class="menu header__menu d-flex align-center justify-end">
+          <h2 class="base-heading-xl menu__heading">Menu</h2>
+          <ul class="menu__list d-flex justify-end">
             <li class="menu__item">
               <a href="#services" class="menu__link">Services</a>
             </li>
@@ -44,18 +48,60 @@
         <div class="title__inner d-flex flex-column justify-center">
           <h1 class="title__heading base-heading-xl">Wedding Dance Lessons</h1>
           <span class="title__location base-heading-sm">New Jersey</span>
-          <p class="title__info base-text">
+          <p class="base-text title__info">
             The wedding dance is one of the most important dances in your life.
             You look perfect and the whole audience is looking at you. Also, it
             becomes the favorite moment you like to play on videos and photos.
             Feel the moment
-					</p>
-					<button class="base-btn title__btn">Let’s start</button>
+          </p>
+          <button class="base-btn title__btn">Let’s start</button>
         </div>
         <div class="title__img"></div>
       </div>
     </section>
+    <section class="base-section services" id="services">
+      <h2 class="base-heading services__heading">Our Services</h2>
+      <p class="base-text services__description">
+        We want to make your wedding day perfect that is why suggest a lot of
+        options for dance: not only for a bride and groom but for their friends
+        and relatives
+      </p>
+      <div class="services__inner d-flex justify-between slider">
+        <div class="base-card services__item d-flex flex-column">
+          <img class="services__img" src="./img/services1.jpg" alt="For Bride and Groom" loading="lazy">
+          <div class="services__item-info">
+            <h3 class="base-heading-sm services__item-heading">For Bride and Groom</h3>
+            <ul class="base-text">
+              <li class="services__item-point">First Dance</li>
+              <li class="services__item-point">Parent & Child Dance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="base-card services__item d-flex flex-column">
+          <img class="services__img" src="./img/services2.jpg" alt="For Guests" loading="lazy">
+          <div class="services__item-info">
+            <h3 class="base-heading-sm services__item-heading">For Guests</h3>
+            <ul class="base-text">
+              <li class="services__item-point">Groomsmen Dance</li>
+              <li class="services__item-point">Parent Dance</li>
+              <li class="services__item-point">Children’s Dance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="base-card services__item d-flex flex-column">
+          <img class="services__img" src="./img/services3.jpg" alt="Other events" loading="lazy">
+          <div class="services__item-info">
+            <h3 class="base-heading-sm services__item-heading">Other events</h3>
+            <ul class="base-text">
+              <li class="services__item-point">Bridal Party Dance</li>
+              <li class="services__item-point">Anniversary Dance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="js/scripts.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>

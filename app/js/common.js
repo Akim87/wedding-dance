@@ -1,4 +1,20 @@
-$(".header__menu-burger, .menu__item").click(function() {
+$(".header__menu-burger, .menu__link, .menu__btn").click(function() {
 	$(".menu").toggleClass("menu--active");
-	$(this).toggleClass("header__menu-burger--active");
+	$(".header__menu-burger").toggleClass("header__menu-burger--active");
+});
+
+$(document).ready(function(){
+  $('.slider').slick({
+		mobileFirst: true,
+		arrows: false,
+		slidesToShow: 1.2,
+		infinite: false,
+		adaptiveHeight: true,
+		responsive: [
+			{
+				breakpoint: 740,
+				settings: "unslick",
+			},
+		],
+  });
 });

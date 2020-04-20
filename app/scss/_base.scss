@@ -4,6 +4,7 @@
 html {
   @media only screen and (max-width: 1080px) {
     font-size: 14px;
+    scroll-behavior: smooth;
   }
 }
 
@@ -17,27 +18,26 @@ a {
   outline: none;
 }
 
-section {
+.base-section {
   padding: 0 calc(50% - 648px);
-  height: 100vh;
+  // height: 100vh;
+  margin-bottom: 6%;
   @media only screen and (max-width: 1400px) {
-    padding: 0 calc(50% - 525px);
+    padding: 0 calc(50% - 540px);
   }
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 1120px) {
     padding: 0 calc(50% - 460px);
   }
   @media only screen and (max-width: 960px) {
-    padding: 0 calc(50% - 340px);
-  }
-  @media only screen and (max-width: 768px) {
-    padding: 0 calc(50% - 340px);
+    padding: 0 calc(50% - 360px);
   }
   @media only screen and (max-width: $media-mob) {
     padding: 0 15px;
+    margin-bottom: 15%;
   }
-  @media screen and (min-width: $media-mob) and (orientation:portrait){
-    height: 50vh;
-  }
+  // @media screen and (min-width: $media-mob) and (orientation:portrait){
+  //   height: 50vh;
+  // }
 }
 
 .base-btn {
@@ -58,8 +58,12 @@ section {
   font-size: 4.5rem;
   font-weight: bold;
   @media only screen and (max-width: 960px){
-    font-size: 3rem;
+    font-size: 48px;
   }
+  @media only screen and (max-width: $media-mob) {
+    font-size: 36px;
+  }
+
 }
 
 .base-heading {
@@ -70,6 +74,9 @@ section {
 .base-heading-sm {
   font-size: 1.5rem;
   font-weight: bold;
+  @media only screen and (max-width: 1080px) {
+    font-size: 18px;
+  }
 }
 
 .base-text {
@@ -77,6 +84,11 @@ section {
   line-height: 1.5rem;
 }
 
+.base-card {
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
+  border-radius: 2px;
+}
 
 /*============ FLEX GRID ============*/
 
@@ -100,6 +112,14 @@ section {
   justify-content: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .align-center {
   align-items: center;
 }
@@ -110,4 +130,14 @@ section {
 
 .align-end {
   align-items: flex-end;
+}
+
+/*============ SLICK ============*/
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  height: auto;
 }
