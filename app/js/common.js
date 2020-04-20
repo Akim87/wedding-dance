@@ -1,6 +1,7 @@
 $(".header__menu-burger, .menu__link, .menu__btn").click(function() {
 	$(".menu").toggleClass("menu--active");
 	$(".header__menu-burger").toggleClass("header__menu-burger--active");
+	$("body").toggleClass("fixed");
 });
 
 $(document).ready(function(){

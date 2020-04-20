@@ -10,6 +10,11 @@ html {
 
 body {
   font-family: $font-family-main;
+  @media only screen and (max-width: $media-mob) {
+    &.fixed {
+      overflow: hidden;
+    }
+  }
 }
 
 a {
@@ -90,6 +95,7 @@ a {
   border-radius: 2px;
 }
 
+
 /*============ FLEX GRID ============*/
 
 .d-flex {
@@ -133,6 +139,11 @@ a {
 }
 
 /*============ SLICK ============*/
+
+.slick-list {
+  box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
+  border-radius: 2px;
+}
 
 .slick-track {
   display: flex;
