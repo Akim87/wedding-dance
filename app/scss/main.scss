@@ -58,7 +58,7 @@
     transition: all 0.3s ease-in-out;
     background-color: white;
     top: 0;
-    right: 0;
+    left: 0;
     flex-direction: column;
     transform: scale(0);
     opacity: 0;
@@ -69,18 +69,15 @@
     background-position-x: right;
     z-index: 5;
     justify-content: flex-start;
+    padding: 11% 0 0 7%;
 
     &--active {
       transform: scale(1);
       opacity: 1;
     }
-    & > * {
-      margin-left: 6%;
-    }
   }
   &__heading {
-    margin-bottom: 12%;
-    margin-top: 10%;
+    margin-bottom: 13%;
     @media only screen and (min-width: $media-mob) {
       display: none;
     }
@@ -101,7 +98,7 @@
     }
     @media only screen and (max-width: $media-mob) {
       font-size: 24px;
-      margin-bottom: 25%;
+      margin-bottom: 22%;
       font-weight: bold;
       font-family: $font-family-main;
     }
