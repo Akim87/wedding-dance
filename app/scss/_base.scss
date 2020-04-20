@@ -47,16 +47,10 @@ a {
 
 .base-btn {
   background-color: transparent;
-  border: 2px solid $color-accent;
-  color: $color-accent;
   padding: .5rem 3rem;
   border-radius: 3px;
   transition: all .3s linear;
   font-size: 16px;
-  &:hover {
-    color: $color-main;
-    border-color: $color-main;
-  }
 }
 
 .base-heading-xl {
@@ -95,6 +89,25 @@ a {
   border-radius: 2px;
 }
 
+.btn-main {
+  @extend .base-btn;
+  border: 2px solid $color-main;
+  color: $color-main;
+  &:hover {
+    color: white;
+    background-color: $color-main;
+  }
+}
+
+.btn-accent {
+  @extend .base-btn;
+  border: 2px solid $color-accent;
+  color: $color-accent;
+  &:hover {
+    color: white;
+    background-color: $color-accent;
+  }
+}
 
 /*============ FLEX GRID ============*/
 
