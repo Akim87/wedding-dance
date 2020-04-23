@@ -1,34 +1,84 @@
 @font-face {
-	font-family: "icons";
-	src: url('../iconfonts/icons.eot');
-	src: url('../iconfonts/icons.eot?#iefix') format('eot'),
-		url('../iconfonts/icons.woff2') format('woff2'),
-		url('../iconfonts/icons.woff') format('woff'),
-		url('../iconfonts/icons.ttf') format('truetype'),
-		url('../iconfonts/icons.svg#icons') format('svg');
+  font-family: "wedding-dance";
+  src: url("../fonts/wedding-dance.eot");
+  src: url("../fonts/wedding-dance.eot") format("embedded-opentype"),
+    url("../fonts/wedding-dance.woff2") format("woff2"),
+    url("../fonts/wedding-dance.woff") format("woff"),
+    url("../fonts/wedding-dance.ttf") format("truetype"),
+    url("../fonts/wedding-dance.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.icon:before {
-	font-family: "icons";
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
-	text-decoration: none;
-	text-transform: none;
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 "wedding-dance";
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: inherit;
 }
 
-
-.icon-Vector:before {
-	content: "\E001";
+@function unicode($str) {
+  @return unquote('"\\#{$str}"');
 }
 
-.icon-Vector3:before {
-	content: "\E002";
+$icon-photos: unicode(ea02);
+$icon-form: unicode(ea03);
+$icon-coffee: unicode(ea04);
+$icon-door: unicode(ea05);
+$icon-coaches: unicode(ea06);
+$icon-star: unicode(ea07);
+$icon-fun: unicode(ea08);
+$icon-happy: unicode(ea09);
+$icon-back: unicode(ea0b);
+$icon-forward: unicode(ea0c);
+$icon-arrow: unicode(ea0d);
+
+.icon-photos::before {
+  content: $icon-photos;
 }
 
-.icon-ico01:before {
-	content: "\E003";
+.icon-form::before {
+  content: $icon-form;
+}
+
+.icon-coffee::before {
+  content: $icon-coffee;
+}
+
+.icon-door::before {
+  content: $icon-door;
+}
+
+.icon-coaches::before {
+  content: $icon-coaches;
+}
+
+.icon-star::before {
+  content: $icon-star;
+}
+
+.icon-fun::before {
+  content: $icon-fun;
+}
+
+.icon-happy::before {
+  content: $icon-happy;
+}
+
+.icon-back {
+  transform: scaleX(-1);
+  &::before {
+    content: $icon-forward;
+  }
+}
+
+.icon-forward::before {
+  content: $icon-forward;
+}
+
+.icon-arrow::before {
+  content: $icon-arrow;
 }

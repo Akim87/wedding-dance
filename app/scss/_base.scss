@@ -2,9 +2,12 @@
 
 /*============ COMMON ============*/
 html {
-  @media only screen and (max-width: 1080px) {
+  scroll-behavior: smooth;
+  @media only screen and (max-width: 1120px) {
     font-size: 14px;
-    scroll-behavior: smooth;
+  }
+  @media only screen and (max-width: 400px) {
+    font-size: 13px;
   }
 }
 
@@ -25,7 +28,6 @@ a {
 
 .base-section {
   padding: 0 calc(50% - 648px);
-  // height: 100vh;
   margin-bottom: 6%;
   @media only screen and (max-width: 1400px) {
     padding: 0 calc(50% - 540px);
@@ -40,29 +42,25 @@ a {
     padding: 0 15px;
     margin-bottom: 15%;
   }
-  // @media screen and (min-width: $media-mob) and (orientation:portrait){
-  //   height: 50vh;
-  // }
 }
 
 .base-btn {
   background-color: transparent;
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
   border-radius: 3px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   font-size: 16px;
 }
 
 .base-heading-xl {
   font-size: 4.5rem;
   font-weight: bold;
-  @media only screen and (max-width: 960px){
+  @media only screen and (max-width: 960px) {
     font-size: 48px;
   }
   @media only screen and (max-width: $media-mob) {
     font-size: 36px;
   }
-
 }
 
 .base-heading {
@@ -79,14 +77,14 @@ a {
 }
 
 .base-text {
-  font-family: $font-family-main;
   line-height: 1.5rem;
 }
 
 .base-card {
   border: 1px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
-  border-radius: 2px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .btn-main {
@@ -107,6 +105,27 @@ a {
     color: white;
     background-color: $color-accent;
   }
+}
+
+.section-heading {
+  @extend .base-heading;
+  margin-bottom: 2%;
+  @media only screen and (max-width: $media-mob) {
+    margin-bottom: 4%;
+  }
+}
+
+.section-description {
+  @extend .base-text;
+  max-width: 670px;
+  margin-bottom: 4%;
+  @media only screen and (max-width: $media-mob) {
+    margin-bottom: 7%;
+  }
+}
+
+.blurred {
+  opacity: 0.5;
 }
 
 /*============ FLEX GRID ============*/
@@ -155,7 +174,6 @@ a {
 
 .slick-list {
   box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
-  border-radius: 2px;
 }
 
 .slick-track {
@@ -164,4 +182,26 @@ a {
 
 .slick-slide {
   height: auto;
+}
+
+.slick-dots {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  & li {
+    margin-right: 4px;
+  }
+  & button {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    color: transparent;
+    width: 6px;
+    height: 6px;
+  }
+  & .slick-active {
+    & button {
+      background-color: $color-accent;
+    }
+  }
 }

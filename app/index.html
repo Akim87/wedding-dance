@@ -12,13 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
   <body>
-    <section class="hero base-section">
+    <section class="hero base-section d-flex flex-column">
       <header class="header d-flex align-center justify-between">
         <a href="#" class="header__logo">Wedding Dance</a>
         <nav class="menu header__menu d-flex align-center justify-end">
@@ -57,22 +61,33 @@
           <button class="btn-accent title__btn">Let’s start</button>
         </div>
         <div class="title__img-holder">
-          <img src="./img/first-dance-i.jpg" alt="First Dance" class="title__img">
+          <img
+            src="./img/first-dance-i.jpg"
+            alt="First Dance"
+            class="title__img"
+          />
         </div>
       </div>
     </section>
     <section class="base-section services" id="services">
-      <h2 class="base-heading services__heading">Our Services</h2>
-      <p class="base-text services__description">
+      <h2 class="section-heading">Our Services</h2>
+      <p class="section-description">
         We want to make your wedding day perfect that is why suggest a lot of
         options for dance: not only for a bride and groom but for their friends
         and relatives
       </p>
-      <div class="services__inner d-flex justify-between slider">
+      <div class="services__inner d-flex justify-between">
         <div class="base-card services__item d-flex flex-column">
-          <img class="services__img" src="./img/services1.jpg" alt="For Bride and Groom" loading="lazy">
+          <img
+            class="services__item-img"
+            src="./img/services1.jpg"
+            alt="For Bride and Groom"
+            loading="lazy"
+          />
           <div class="services__item-info">
-            <h3 class="base-heading-sm services__item-heading">For Bride and Groom</h3>
+            <h3 class="base-heading-sm services__item-heading">
+              For Bride and Groom
+            </h3>
             <ul class="base-text">
               <li class="services__item-point">First Dance</li>
               <li class="services__item-point">Parent & Child Dance</li>
@@ -80,7 +95,12 @@
           </div>
         </div>
         <div class="base-card services__item d-flex flex-column">
-          <img class="services__img" src="./img/services2.jpg" alt="For Guests" loading="lazy">
+          <img
+            class="services__item-img"
+            src="./img/services2.jpg"
+            alt="For Guests"
+            loading="lazy"
+          />
           <div class="services__item-info">
             <h3 class="base-heading-sm services__item-heading">For Guests</h3>
             <ul class="base-text">
@@ -91,7 +111,12 @@
           </div>
         </div>
         <div class="base-card services__item d-flex flex-column">
-          <img class="services__img" src="./img/services3.jpg" alt="Other events" loading="lazy">
+          <img
+            class="services__item-img"
+            src="./img/services3.jpg"
+            alt="Other events"
+            loading="lazy"
+          />
           <div class="services__item-info">
             <h3 class="base-heading-sm services__item-heading">Other events</h3>
             <ul class="base-text">
@@ -102,8 +127,172 @@
         </div>
       </div>
     </section>
-
+    <section class="base-section offer" id="offer">
+      <h2 class="section-heading">What we offer</h2>
+      <p class="section-description">
+        Our goal is not only to teach you how to dance but also give the best
+        unforgettable memories about preparing to your event
+      </p>
+      <div class="offer__inner d-flex">
+        <div class="offer__item d-flex align-center flex-column">
+          <i class="icon icon-coaches offer__icon"></i>
+          <span class="offer__description">Talented Coaches</span>
+        </div>
+        <div class="offer__item d-flex align-center flex-column">
+          <i class="icon icon-door offer__icon"></i>
+          <span class="offer__description">Cozy rooms for training</span>
+        </div>
+        <div class="offer__item d-flex align-center flex-column">
+          <i class="icon icon-coffee offer__icon"></i>
+          <span class="offer__description">Coffee, tea, and cookies</span>
+        </div>
+        <div class="offer__item d-flex align-center flex-column">
+          <i class="icon icon-form offer__icon"></i>
+          <span class="offer__description">Good physical form</span>
+        </div>
+        <div class="offer__item d-flex align-center flex-column">
+          <i class="icon icon-star offer__icon"></i>
+          <span class="offer__description">Self Confidence and success on your event</span>
+        </div>
+        <div class="offer__item d-flex align-center flex-column">
+          <i class="icon icon-fun offer__icon"></i>
+          <span class="offer__description">Exciting emotions and a lot of fun</span>
+        </div>
+        <div class="offer__item d-flex align-center flex-column">
+          <i class="icon icon-photos offer__icon"></i>
+          <span class="offer__description">Great photos from your event</span>
+        </div>
+        <div class="offer__item d-flex align-center flex-column">
+          <i class="icon icon-happy offer__icon"></i>
+          <span class="offer__description">Spend hours together in happiness</span>
+        </div>
+      </div>
+    </section>
+    <section class="base-section coaches" id="coaches">
+      <h2 class="section-heading">Our Coaches</h2>
+      <p class="section-description">
+        Coaches in our school are not only perfect dancers but also have a big
+        experience in coaching that is why you will feel really amazing after
+        each of your class
+      </p>
+      <div class="coaches__inner">
+        <div class="base-card coaches__item">
+          <img
+            class="coaches__item-img"
+            src="./img/coach1.jpg"
+            alt="Coach photo"
+            loading="lazy"
+          />
+          <div class="coaches__item-info d-flex flex-column">
+            <span class="coaches__item-number">01</span>
+            <h3 class="base-heading-sm coaches__item-name">Ann Walker</h3>
+            <span class="coaches__item-position">Dancer</span>
+            <ul class="base-text coaches__item-list">
+              <li class="coaches__item-point">
+                <span class="blurred">Work experience </span>8 years
+              </li>
+              <li class="coaches__item-point">
+                <span class="blurred">Teacher for </span>3 years
+              </li>
+              <li class="coaches__item-point">
+                <span class="blurred">Style </span>Viennese Waltz, Salsa
+              </li>
+            </ul>
+            <button class="btn-accent coaches__item-btn">Let’s start</button>
+            <button class="btn-accent coaches__item-btn--mob"></button>
+          </div>
+        </div>
+        <div class="base-card coaches__item">
+          <img
+            class="coaches__item-img"
+            src="./img/coach2.jpg"
+            alt="Coach photo"
+            loading="lazy"
+          />
+          <div class="coaches__item-info d-flex flex-column">
+            <span class="coaches__item-number">02</span>
+            <h3 class="base-heading-sm coaches__item-name">Tom Wilspon</h3>
+            <span class="coaches__item-position">Dancer</span>
+            <ul class="base-text coaches__item-list">
+              <li class="coaches__item-point">
+                <span class="blurred">Work experience </span>10 years
+              </li>
+              <li class="coaches__item-point">
+                <span class="blurred">Teacher for </span>5 years
+              </li>
+              <li class="coaches__item-point">
+                <span class="blurred">Style </span>HipHop
+              </li>
+            </ul>
+            <button class="btn-accent coaches__item-btn">Let’s start</button>
+            <button class="btn-accent coaches__item-btn--mob"></button>
+          </div>
+        </div>
+        <div class="base-card coaches__item">
+          <img
+            class="coaches__item-img"
+            src="./img/coach1.jpg"
+            alt="Coach photo"
+            loading="lazy"
+          />
+          <div class="coaches__item-info d-flex flex-column">
+            <span class="coaches__item-number">03</span>
+            <h3 class="base-heading-sm coaches__item-name">Ann Walker</h3>
+            <span class="coaches__item-position">Dancer</span>
+            <ul class="base-text coaches__item-list">
+              <li class="coaches__item-point">
+                <span class="blurred">Work experience </span>8 years
+              </li>
+              <li class="coaches__item-point">
+                <span class="blurred">Teacher for </span>3 years
+              </li>
+              <li class="coaches__item-point">
+                <span class="blurred">Style </span>Viennese Waltz, Salsa
+              </li>
+            </ul>
+            <button class="btn-accent coaches__item-btn">Let’s start</button>
+            <button class="btn-accent coaches__item-btn--mob"></button>
+          </div>
+        </div>
+        <div class="base-card coaches__item">
+          <img
+            class="coaches__item-img"
+            src="./img/coach2.jpg"
+            alt="Coach photo"
+            loading="lazy"
+          />
+          <div class="coaches__item-info d-flex flex-column">
+            <span class="coaches__item-number">04</span>
+            <h3 class="base-heading-sm coaches__item-name">Tom Wilspon</h3>
+            <span class="coaches__item-position">Dancer</span>
+            <ul class="base-text coaches__item-list">
+              <li class="coaches__item-point">
+                <span class="blurred">Work experience </span>10 years
+              </li>
+              <li class="coaches__item-point">
+                <span class="blurred">Teacher for </span>5 years
+              </li>
+              <li class="coaches__item-point">
+                <span class="blurred">Style </span>HipHop
+              </li>
+            </ul>
+            <button class="btn-accent coaches__item-btn">Let’s start</button>
+            <button class="btn-accent coaches__item-btn--mob"></button>
+          </div>
+        </div>
+      </div>
+      <div class="coaches__navigation d-flex justify-center">
+        <span class="coaches__counter"></span>
+      </div>
+    </section>
+    <footer class="base-section footer d-flex justify-between align-center">
+      <a href="#" class="footer__logo">Wedding Dance</a>
+      <span class="footer__copyright">Copyright © 2019</span>
+    </footer>
     <script src="js/scripts.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>
