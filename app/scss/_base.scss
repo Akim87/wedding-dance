@@ -3,6 +3,7 @@
 /*============ COMMON ============*/
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 12vh;
   @media only screen and (max-width: 1120px) {
     font-size: 14px;
   }
@@ -30,14 +31,13 @@ section {
     padding: 0 calc(50% - 540px);
   }
   @media only screen and (max-width: 1120px) {
-    padding: 0 calc(50% - 460px);
+    padding: 0 calc(50% - 482px);
   }
   @media only screen and (max-width: 960px) {
-    padding: 0 calc(50% - 360px);
+    padding: 0 calc(50% - 369px);
   }
   @media only screen and (max-width: $media-mob) {
     padding: 0 15px;
-    margin-bottom: 15%;
   }
 }
 

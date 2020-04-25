@@ -4,22 +4,12 @@
 @import "base";
 @import "vars";
 
-.hero {
-	padding-top: 8vh;
-	@media screen and (min-width: $media-mob) and (orientation: landscape) {
-		height: 100vh;
-	}
-	@media screen and (max-width: $media-mob) and (orientation: portrait) {
-		min-height: 100vh;
-	}
-}
-
 .header {
-	width: 100%;
+	width: 100vw;
 	background-color: #ffffff;
 	position: fixed;
 	z-index: 99;
-	height: 8vh;
+  min-height: 8vh;
 	@media only screen and (max-width: $media-mob) {
     padding-top: 4%;
     padding-bottom: 4%;
@@ -65,6 +55,54 @@
 				top: 0;
 			}
 		}
+	}
+}
+
+.hero {
+  padding-top: 8vh;
+  height: 100vh;
+	@media screen and (orientation: portrait) {
+    flex-direction: column-reverse;
+  }
+	&__inner {
+		width: 40%;
+		height: 100%;
+		background-color: #ffffff;
+		padding-right: 6%;
+		@media only screen and (orientation: portrait) {
+			width: 90%;
+      padding: 0 0 6%;
+      justify-content: flex-start;
+		}
+	}
+	&__heading {
+		margin-bottom: 4%;
+	}
+	&__location {
+		margin-bottom: 6%;
+		font-size: 1.5rem;
+		@media only screen and (max-width: $media-mob) {
+			font-size: 14px;
+		}
+	}
+	&__info {
+		margin-bottom: 8%;
+	}
+	&__btn {
+    align-self: flex-start;
+	}
+	&__img-holder {
+    @media only screen and (orientation: portrait) {
+			margin: 0 -30px 10%;
+		}
+		@media only screen and (orientation: portrait) and (max-width: 960px) {
+			margin: 0 -15px 10%;
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 }
 
@@ -128,55 +166,6 @@
 	}
 }
 
-.title {
-	height: 100%;
-	@media only screen and (max-width: $media-mob) {
-		flex-direction: column-reverse;
-		align-items: baseline;
-	}
-	&__inner {
-		width: 40%;
-		height: 100%;
-		background-color: #ffffff;
-		padding-right: 6%;
-		@media only screen and (max-width: $media-mob) {
-			width: 90%;
-			padding: 0;
-		}
-	}
-	&__heading {
-		margin-bottom: 4%;
-	}
-	&__location {
-		margin-bottom: 6%;
-		font-size: 1.5rem;
-		@media only screen and (max-width: $media-mob) {
-			font-size: 14px;
-		}
-	}
-	&__info {
-		margin-bottom: 8%;
-	}
-	&__btn {
-		align-self: flex-start;
-	}
-	&__img-holder {
-		height: 100%;
-		@media only screen and (max-width: $media-mob) {
-			margin: 0 -15px 10%;
-		}
-	}
-	&__img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		min-height: 50vh;
-		@media only screen and (max-width: $media-mob) {
-			min-height: auto;
-		}
-	}
-}
-
 .services {
 	&__inner {
 		@media only screen and (max-width: $media-mob) {
@@ -191,7 +180,6 @@
 		}
 		&-img {
 			width: 100%;
-			max-width: 421px;
 		}
 		&-info {
 			padding: 10% 6% 18%;

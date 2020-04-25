@@ -10,8 +10,9 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
-      rel="stylesheet"
+      rel= "preload"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -47,26 +48,24 @@
       </nav>
       <span class="header__menu-burger"></span>
     </header>
-    <section class="hero base-section d-flex flex-column">
-      <div class="title d-flex align-center">
-        <div class="title__inner d-flex flex-column justify-center">
-          <h1 class="title__heading base-heading-xl">Wedding Dance Lessons</h1>
-          <span class="title__location base-heading-sm">New Jersey</span>
-          <p class="base-text title__info">
-            The wedding dance is one of the most important dances in your life.
-            You look perfect and the whole audience is looking at you. Also, it
-            becomes the favorite moment you like to play on videos and photos.
-            Feel the moment
-          </p>
-          <button class="btn-accent title__btn">Let’s start</button>
-        </div>
-        <div class="title__img-holder">
-          <img
-            src="./img/first-dance-i.jpg"
-            alt="First Dance"
-            class="title__img"
-          />
-        </div>
+    <section class="hero base-section d-flex">
+      <div class="hero__inner d-flex flex-column justify-center">
+        <h1 class="hero__heading base-heading-xl">Wedding Dance Lessons</h1>
+        <span class="hero__location base-heading-sm">New Jersey</span>
+        <p class="base-text hero__info">
+          The wedding dance is one of the most important dances in your life.
+          You look perfect and the whole audience is looking at you. Also, it
+          becomes the favorite moment you like to play on videos and photos.
+          Feel the moment
+        </p>
+        <button class="btn-accent hero__btn">Let’s start</button>
+      </div>
+      <div class="hero__img-holder">
+        <img
+          src="./img/first-dance-i.jpg"
+          alt="First Dance"
+          class="hero__img"
+        />
       </div>
     </section>
     <section class="base-section services" id="services">
@@ -77,7 +76,7 @@
         and relatives
       </p>
       <div class="services__inner d-flex justify-between">
-        <div class="base-card services__item d-flex flex-column">
+        <div class="base-card services__item d-flex flex-column" data-aos="zoom-in" data-aos-delay="200">
           <img
             class="services__item-img"
             src="./img/services1.jpg"
@@ -94,7 +93,7 @@
             </ul>
           </div>
         </div>
-        <div class="base-card services__item d-flex flex-column">
+        <div class="base-card services__item d-flex flex-column" data-aos="zoom-in" data-aos-delay="400">
           <img
             class="services__item-img"
             src="./img/services2.jpg"
@@ -110,7 +109,7 @@
             </ul>
           </div>
         </div>
-        <div class="base-card services__item d-flex flex-column">
+        <div class="base-card services__item d-flex flex-column" data-aos="zoom-in" data-aos-delay="600">
           <img
             class="services__item-img"
             src="./img/services3.jpg"
@@ -134,37 +133,43 @@
         unforgettable memories about preparing to your event
       </p>
       <div class="offer__inner d-flex">
-        <div class="offer__item d-flex align-center flex-column">
+        <div class="offer__item d-flex align-center flex-column" data-aos="zoom-out" data-aos-delay="100">
           <i class="icon icon-coaches offer__icon"></i>
           <span class="offer__description">Talented Coaches</span>
         </div>
-        <div class="offer__item d-flex align-center flex-column">
+        <div class="offer__item d-flex align-center flex-column" data-aos="zoom-out" data-aos-delay="200">
           <i class="icon icon-door offer__icon"></i>
           <span class="offer__description">Cozy rooms for training</span>
         </div>
-        <div class="offer__item d-flex align-center flex-column">
+        <div class="offer__item d-flex align-center flex-column" data-aos="zoom-out" data-aos-delay="300">
           <i class="icon icon-coffee offer__icon"></i>
           <span class="offer__description">Coffee, tea, and cookies</span>
         </div>
-        <div class="offer__item d-flex align-center flex-column">
+        <div class="offer__item d-flex align-center flex-column" data-aos="zoom-out" data-aos-delay="400">
           <i class="icon icon-form offer__icon"></i>
           <span class="offer__description">Good physical form</span>
         </div>
-        <div class="offer__item d-flex align-center flex-column">
+        <div class="offer__item d-flex align-center flex-column" data-aos="zoom-out" data-aos-delay="500">
           <i class="icon icon-star offer__icon"></i>
-          <span class="offer__description">Self Confidence and success on your event</span>
+          <span class="offer__description"
+            >Self Confidence and success on your event</span
+          >
         </div>
-        <div class="offer__item d-flex align-center flex-column">
+        <div class="offer__item d-flex align-center flex-column" data-aos="zoom-out" data-aos-delay="600">
           <i class="icon icon-fun offer__icon"></i>
-          <span class="offer__description">Exciting emotions and a lot of fun</span>
+          <span class="offer__description"
+            >Exciting emotions and a lot of fun</span
+          >
         </div>
-        <div class="offer__item d-flex align-center flex-column">
+        <div class="offer__item d-flex align-center flex-column" data-aos="zoom-out" data-aos-delay="700">
           <i class="icon icon-photos offer__icon"></i>
           <span class="offer__description">Great photos from your event</span>
         </div>
-        <div class="offer__item d-flex align-center flex-column">
+        <div class="offer__item d-flex align-center flex-column" data-aos="zoom-out" data-aos-delay="800">
           <i class="icon icon-happy offer__icon"></i>
-          <span class="offer__description">Spend hours together in happiness</span>
+          <span class="offer__description"
+            >Spend hours together in happiness</span
+          >
         </div>
       </div>
     </section>
@@ -290,6 +295,10 @@
       <span class="footer__copyright">Copyright © 2019</span>
     </footer>
     <script src="js/scripts.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
