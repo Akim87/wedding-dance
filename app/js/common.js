@@ -8,40 +8,49 @@ $(".header__menu-burger, .menu__link, .menu__btn").click(function () {
 
 /*============ HEADER SCROLL SHADOW ============*/
 
-$(function () {
-  $(window).scroll(function () {
-    var winTop = $(window).scrollTop();
-    if (winTop >= 50) {
-      $("header").addClass("header--shadowed");
-    } else {
-      $("header").removeClass("header--shadowed");
-    }
-  });
+$(window).scroll(function () {
+  var winTop = $(window).scrollTop();
+  winTop >= 10
+    ? $("header").addClass("header--shadowed")
+    : $("header").removeClass("header--shadowed");
 });
 
 /*============ SECTION SERVICE SLIDER ============*/
 
-// $(document).ready(function() {
-// 	$('.services__slider').slick({
-// 		mobileFirst: true,
-// 		arrows: false,
-// 		slidesToShow: 1.2,
-// 		infinite: false,
-// 		adaptiveHeight: true,
-// 		dots: true,
-// 		responsive: [
-// 			{
-// 				breakpoint: 740,
-// 				settings: 'unslick'
-// 			}
-// 		]
-// 	});
-// });
+$(window).on("load resize", function () {
+  var slider = $(".services__inner");
+  //срабатывает при загрузке и изменении ширина окна
+  if (document.documentElement.clientWidth <= 760) {
+    //проверяем ширину (760 у меня уже мобильная версия)
+    if (slider.hasClass("slick-initialized")) {
+      //проверяем запущенл ли слайдер уже
+      return; //если запущен - выходим
+    } else {
+      //если не запущен - запускаем
+      slider.slick({
+        arrows: false,
+        slidesToShow: 1.2,
+        infinite: false,
+        adaptiveHeight: true,
+        dots: true,
+      });
+    }
+  } else {
+    if (slider.hasClass("slick-initialized"))
+      //если ширина больше мобильной версии и слайдер включен - выключаем слайдер
+      slider.slick("unslick");
+  }
+});
 
 /*============ SECTION COACHES SLIDER ============*/
 
 $(document).ready(function () {
   $(".coaches__inner")
+    .on("init afterChange", function (event, slick) {
+      $(".coaches__counter").text(
+        slick.currentSlide + 2 + " из " + slick.slideCount
+      );
+    })
     .slick({
       slidesToShow: 2,
       slidesToScroll: 2,
@@ -62,47 +71,5 @@ $(document).ready(function () {
           },
         },
       ],
-    })
-    .on("afterChange", function (event, slick, currentSlide) {
-      $(".coaches__counter").text(currentSlide + 2 + " из " + slick.slideCount);
     });
-  var slick = $(".coaches__inner").slick("getSlick");
-  $(".coaches__counter").text(
-    slick.currentSlide + 2 + " из " + slick.slideCount
-  );
-});
-
-// $(window).resize(function() {
-// 	console.log(document.documentElement.clientWidth)
-// 	if(document.documentElement.clientWidth < 760) {
-// 		$('.services__inner').toggleClass('services__slider')
-// 	}
-// })
-
-$(window).on("load resize orientationchange", function () {
-  $(".services__inner").each(function () {
-    var $slider = $(this);
-    if (document.documentElement.clientWidth > 760) {
-      if ($slider.hasClass("slick-initialized")) {
-        $slider.slick("unslick");
-      }
-    } else {
-      if (!$slider.hasClass("slick-initialized")) {
-        $slider.slick({
-					mobileFirst: true,
-					arrows: false,
-					slidesToShow: 1.2,
-					infinite: false,
-					adaptiveHeight: true,
-					dots: true,
-					responsive: [
-						{
-							breakpoint: 740,
-							settings: 'unslick'
-						}
-					]
-				});
-      }
-    }
-  });
 });
