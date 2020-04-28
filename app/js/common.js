@@ -48,7 +48,7 @@ $(document).ready(function () {
   $(".coaches__inner")
     .on("init afterChange", function (event, slick) {
       $(".coaches__counter").text(
-        slick.currentSlide + 2 + " из " + slick.slideCount
+        slick.currentSlide + 2 + " of " + slick.slideCount
       );
     })
     .slick({
