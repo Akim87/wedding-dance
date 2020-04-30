@@ -13,7 +13,10 @@
       rel="preload"
       as="font"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -51,137 +54,145 @@
     </header>
     <section class="hero base-section d-flex">
       <div class="hero__inner d-flex flex-column justify-center">
-        <h1 class="hero__heading base-heading-xl">Wedding Dance Lessons</h1>
-        <span class="hero__location base-heading-sm">New Jersey</span>
-        <p class="base-text hero__info">
+        <h1
+          class="hero__heading base-heading-xl wow fadeInDown"
+          data-wow-delay="0.1s"
+        >
+          Wedding Dance Lessons
+        </h1>
+        <span
+          class="hero__location base-heading-sm wow fadeIn"
+          data-wow-delay="0.4s"
+          >New Jersey</span
+        >
+        <p class="base-text hero__info wow fadeIn" data-wow-delay="0.6s">
           The wedding dance is one of the most important dances in your life.
           You look perfect and the whole audience is looking at you. Also, it
           becomes the favorite moment you like to play on videos and photos.
           Feel the moment
         </p>
-        <button class="btn-accent hero__btn">Let’s start</button>
+        <button class="btn-accent hero__btn wow fadeInUp" data-wow-delay="0.8s">
+          Let’s start
+        </button>
       </div>
       <div class="hero__img-holder">
         <img
           src="./img/first-dance-i.jpg"
           alt="First Dance"
-          class="hero__img"
+          class="hero__img wow fadeIn"
+          data-wow-delay="1.2s"
         />
       </div>
     </section>
     <section class="base-section services" id="services">
-      <h2 class="section-heading">Our Services</h2>
-      <p class="section-description">
+      <h2 class="section-heading wow fadeInDown" data-wow-delay="0.1s">
+        Our Services
+      </h2>
+      <p class="section-description wow fadeInDown" data-wow-delay="0.3s">
         We want to make your wedding day perfect that is why suggest a lot of
         options for dance: not only for a bride and groom but for their friends
         and relatives
       </p>
       <div class="services__inner d-flex justify-between">
         <div
-          class="base-card services__item d-flex flex-column"
-          data-aos="zoom-in"
-          data-aos-delay="200"
+          class="base-card services__item service-card d-flex flex-column wow fadeInUp"
+          data-wow-delay="0.5s"
         >
           <img
-            class="services__item-img"
+            class="service-card__img"
             src="./img/services1.jpg"
             alt="For Bride and Groom"
             loading="lazy"
           />
-          <div class="services__item-info">
-            <h3 class="base-heading-sm services__item-heading">
+          <div class="service-card__info">
+            <h3 class="base-heading-sm service-card__heading">
               For Bride and Groom
             </h3>
             <ul class="base-text">
-              <li class="services__item-point">First Dance</li>
-              <li class="services__item-point">Parent & Child Dance</li>
+              <li class="service-card__point">First Dance</li>
+              <li class="service-card__point">Parent & Child Dance</li>
             </ul>
           </div>
         </div>
         <div
-          class="base-card services__item d-flex flex-column"
-          data-aos="zoom-in"
-          data-aos-delay="400"
+          class="base-card services__item service-card d-flex flex-column wow fadeInUp"
+          data-wow-delay="0.7s"
         >
           <img
-            class="services__item-img"
+            class="service-card__img"
             src="./img/services2.jpg"
-            alt="For Guests"
+            alt="For Bride and Groom"
             loading="lazy"
           />
-          <div class="services__item-info">
-            <h3 class="base-heading-sm services__item-heading">For Guests</h3>
+          <div class="service-card__info">
+            <h3 class="base-heading-sm service-card__heading">For Guests</h3>
             <ul class="base-text">
-              <li class="services__item-point">Groomsmen Dance</li>
-              <li class="services__item-point">Parent Dance</li>
-              <li class="services__item-point">Children’s Dance</li>
+              <li class="service-card__point">Groomsmen Dance</li>
+              <li class="service-card__point">Parent Dance</li>
+              <li class="service-card__point">Children’s Dance</li>
             </ul>
           </div>
         </div>
         <div
-          class="base-card services__item d-flex flex-column"
-          data-aos="zoom-in"
-          data-aos-delay="600"
+          class="base-card services__item service-card d-flex flex-column wow fadeInUp"
+          data-wow-delay="0.9s"
         >
           <img
-            class="services__item-img"
+            class="service-card__img"
             src="./img/services3.jpg"
-            alt="Other events"
+            alt="For Bride and Groom"
             loading="lazy"
           />
-          <div class="services__item-info">
-            <h3 class="base-heading-sm services__item-heading">Other events</h3>
+          <div class="service-card__info">
+            <h3 class="base-heading-sm service-card__heading">Other events</h3>
             <ul class="base-text">
-              <li class="services__item-point">Bridal Party Dance</li>
-              <li class="services__item-point">Anniversary Dance</li>
+              <li class="service-card__point">Bridal Party Dance</li>
+              <li class="service-card__point">Anniversary Dance</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
     <section class="base-section offer" id="offer">
-      <h2 class="section-heading">What we offer</h2>
-      <p class="section-description">
+      <h2 class="section-heading wow fadeInDown" data-wow-delay="0.1s">
+        What we offer
+      </h2>
+      <p class="section-description wow fadeInDown" data-wow-delay="0.3s">
         Our goal is not only to teach you how to dance but also give the best
         unforgettable memories about preparing to your event
       </p>
       <div class="offer__inner d-flex">
         <div
-          class="offer__item d-flex align-center flex-column"
-          data-aos="zoom-out"
-          data-aos-delay="100"
+          class="offer__item d-flex align-center flex-column wow fadeInUp"
+          data-wow-delay="0.4s"
         >
           <i class="icon icon-coaches offer__icon"></i>
           <span class="offer__description">Talented Coaches</span>
         </div>
         <div
-          class="offer__item d-flex align-center flex-column"
-          data-aos="zoom-out"
-          data-aos-delay="200"
+          class="offer__item d-flex align-center flex-column wow fadeInUp"
+          data-wow-delay="0.5s"
         >
           <i class="icon icon-door offer__icon"></i>
           <span class="offer__description">Cozy rooms for training</span>
         </div>
         <div
-          class="offer__item d-flex align-center flex-column"
-          data-aos="zoom-out"
-          data-aos-delay="300"
+          class="offer__item d-flex align-center flex-column wow fadeInUp"
+          data-wow-delay="0.6s"
         >
           <i class="icon icon-coffee offer__icon"></i>
           <span class="offer__description">Coffee, tea, and cookies</span>
         </div>
         <div
-          class="offer__item d-flex align-center flex-column"
-          data-aos="zoom-out"
-          data-aos-delay="400"
+          class="offer__item d-flex align-center flex-column wow fadeInUp"
+          data-wow-delay="0.7s"
         >
           <i class="icon icon-form offer__icon"></i>
           <span class="offer__description">Good physical form</span>
         </div>
         <div
-          class="offer__item d-flex align-center flex-column"
-          data-aos="zoom-out"
-          data-aos-delay="500"
+          class="offer__item d-flex align-center flex-column wow fadeInUp"
+          data-wow-delay="0.8s"
         >
           <i class="icon icon-star offer__icon"></i>
           <span class="offer__description"
@@ -189,9 +200,8 @@
           >
         </div>
         <div
-          class="offer__item d-flex align-center flex-column"
-          data-aos="zoom-out"
-          data-aos-delay="600"
+          class="offer__item d-flex align-center flex-column wow fadeInUp"
+          data-wow-delay="0.9s"
         >
           <i class="icon icon-fun offer__icon"></i>
           <span class="offer__description"
@@ -199,17 +209,15 @@
           >
         </div>
         <div
-          class="offer__item d-flex align-center flex-column"
-          data-aos="zoom-out"
-          data-aos-delay="700"
+          class="offer__item d-flex align-center flex-column wow fadeInUp"
+          data-wow-delay="1s"
         >
           <i class="icon icon-photos offer__icon"></i>
           <span class="offer__description">Great photos from your event</span>
         </div>
         <div
-          class="offer__item d-flex align-center flex-column"
-          data-aos="zoom-out"
-          data-aos-delay="800"
+          class="offer__item d-flex align-center flex-column wow fadeInUp"
+          data-wow-delay="1.1s"
         >
           <i class="icon icon-happy offer__icon"></i>
           <span class="offer__description"
@@ -219,115 +227,123 @@
       </div>
     </section>
     <section class="base-section coaches" id="coaches">
-      <h2 class="section-heading">Our Coaches</h2>
-      <p class="section-description">
+      <h2 class="section-heading wow fadeInDown" data-wow-delay="0.1s">
+        Our Coaches
+      </h2>
+      <p class="section-description wow fadeInDown" data-wow-delay="0.3s">
         Coaches in our school are not only perfect dancers but also have a big
         experience in coaching that is why you will feel really amazing after
         each of your class
       </p>
       <div class="coaches__inner">
-        <div class="base-card coaches__item">
+        <div
+          class="base-card coaches__item coach-card wow fadeInUp"
+          data-wow-delay="0.5s"
+        >
           <img
-            class="coaches__item-img"
+            class="coach-card__img"
             src="./img/coach1.jpg"
             alt="Coach photo"
             loading="lazy"
           />
-          <div class="coaches__item-info d-flex flex-column">
-            <span class="coaches__item-number">01</span>
-            <h3 class="base-heading-sm coaches__item-name">Ann Walker</h3>
-            <span class="coaches__item-position">Dancer</span>
-            <ul class="base-text coaches__item-list">
-              <li class="coaches__item-point">
+          <div class="coach-card__info d-flex flex-column">
+            <span class="coach-card__number">01</span>
+            <h3 class="base-heading-sm coach-card__name">Ann Walker</h3>
+            <span class="coach-card__position">Dancer</span>
+            <ul class="base-text coach-card__list">
+              <li class="coach-card__list-item">
                 <span class="blurred">Work experience </span>8 years
               </li>
-              <li class="coaches__item-point">
+              <li class="coach-card__list-item">
                 <span class="blurred">Teacher for </span>3 years
               </li>
-              <li class="coaches__item-point">
+              <li class="coach-card__list-item">
                 <span class="blurred">Style </span>Viennese Waltz, Salsa
               </li>
             </ul>
-            <button class="btn-accent coaches__item-btn">Let’s start</button>
-            <button class="btn-accent coaches__item-btn--mob"></button>
+            <button class="btn-accent coach-card__btn">Let’s start</button>
+            <button class="btn-accent coach-card__btn--mob"></button>
           </div>
         </div>
-        <div class="base-card coaches__item">
+        <div
+          class="base-card coaches__item coach-card wow fadeInUp"
+          data-wow-delay="0.7s"
+        >
           <img
-            class="coaches__item-img"
+            class="coach-card__img"
             src="./img/coach2.jpg"
             alt="Coach photo"
             loading="lazy"
           />
-          <div class="coaches__item-info d-flex flex-column">
-            <span class="coaches__item-number">02</span>
-            <h3 class="base-heading-sm coaches__item-name">Tom Wilspon</h3>
-            <span class="coaches__item-position">Dancer</span>
-            <ul class="base-text coaches__item-list">
-              <li class="coaches__item-point">
+          <div class="coach-card__info d-flex flex-column">
+            <span class="coach-card__number">02</span>
+            <h3 class="base-heading-sm coach-card__name">Tom Wilspon</h3>
+            <span class="coach-card__position">Dancer</span>
+            <ul class="base-text coach-card__list">
+              <li class="coach-card__list-item">
                 <span class="blurred">Work experience </span>10 years
               </li>
-              <li class="coaches__item-point">
+              <li class="coach-card__list-item">
                 <span class="blurred">Teacher for </span>5 years
               </li>
-              <li class="coaches__item-point">
+              <li class="coach-card__list-item">
                 <span class="blurred">Style </span>HipHop
               </li>
             </ul>
-            <button class="btn-accent coaches__item-btn">Let’s start</button>
-            <button class="btn-accent coaches__item-btn--mob"></button>
+            <button class="btn-accent coach-card__btn">Let’s start</button>
+            <button class="btn-accent coach-card__btn--mob"></button>
           </div>
         </div>
-        <div class="base-card coaches__item">
+        <div class="base-card coaches__item coach-card">
           <img
-            class="coaches__item-img"
+            class="coach-card__img"
             src="./img/coach1.jpg"
             alt="Coach photo"
             loading="lazy"
           />
-          <div class="coaches__item-info d-flex flex-column">
-            <span class="coaches__item-number">03</span>
-            <h3 class="base-heading-sm coaches__item-name">Ann Walker</h3>
-            <span class="coaches__item-position">Dancer</span>
-            <ul class="base-text coaches__item-list">
-              <li class="coaches__item-point">
+          <div class="coach-card__info d-flex flex-column">
+            <span class="coach-card__number">03</span>
+            <h3 class="base-heading-sm coach-card__name">Ann Walker</h3>
+            <span class="coach-card__position">Dancer</span>
+            <ul class="base-text coach-card__list">
+              <li class="coach-card__list-item">
                 <span class="blurred">Work experience </span>8 years
               </li>
-              <li class="coaches__item-point">
+              <li class="coach-card__list-item">
                 <span class="blurred">Teacher for </span>3 years
               </li>
-              <li class="coaches__item-point">
+              <li class="coach-card__list-item">
                 <span class="blurred">Style </span>Viennese Waltz, Salsa
               </li>
             </ul>
-            <button class="btn-accent coaches__item-btn">Let’s start</button>
-            <button class="btn-accent coaches__item-btn--mob"></button>
+            <button class="btn-accent coach-card__btn">Let’s start</button>
+            <button class="btn-accent coach-card__btn--mob"></button>
           </div>
         </div>
-        <div class="base-card coaches__item">
+        <div class="base-card coaches__item coach-card">
           <img
-            class="coaches__item-img"
+            class="coach-card__img"
             src="./img/coach2.jpg"
             alt="Coach photo"
             loading="lazy"
           />
-          <div class="coaches__item-info d-flex flex-column">
-            <span class="coaches__item-number">04</span>
-            <h3 class="base-heading-sm coaches__item-name">Tom Wilspon</h3>
-            <span class="coaches__item-position">Dancer</span>
-            <ul class="base-text coaches__item-list">
-              <li class="coaches__item-point">
+          <div class="coach-card__info d-flex flex-column">
+            <span class="coach-card__number">04</span>
+            <h3 class="base-heading-sm coach-card__name">Tom Wilspon</h3>
+            <span class="coach-card__position">Dancer</span>
+            <ul class="base-text coach-card__list">
+              <li class="coach-card__list-item">
                 <span class="blurred">Work experience </span>10 years
               </li>
-              <li class="coaches__item-point">
+              <li class="coach-card__list-item">
                 <span class="blurred">Teacher for </span>5 years
               </li>
-              <li class="coaches__item-point">
+              <li class="coach-card__list-item">
                 <span class="blurred">Style </span>HipHop
               </li>
             </ul>
-            <button class="btn-accent coaches__item-btn">Let’s start</button>
-            <button class="btn-accent coaches__item-btn--mob"></button>
+            <button class="btn-accent coach-card__btn">Let’s start</button>
+            <button class="btn-accent coach-card__btn--mob"></button>
           </div>
         </div>
       </div>
@@ -340,9 +356,15 @@
       <span class="footer__copyright">Copyright © 2019</span>
     </footer>
     <script src="js/scripts.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    ></script>
     <script>
-      AOS.init();
+      new WOW({
+        mobile: false,
+        live: false,
+      }).init();
     </script>
     <script
       type="text/javascript"

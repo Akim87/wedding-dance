@@ -19,14 +19,10 @@ $(window).scroll(function () {
 
 $(window).on("load resize", function () {
   var slider = $(".services__inner");
-  //срабатывает при загрузке и изменении ширина окна
   if (document.documentElement.clientWidth <= 760) {
-    //проверяем ширину (760 у меня уже мобильная версия)
     if (slider.hasClass("slick-initialized")) {
-      //проверяем запущенл ли слайдер уже
-      return; //если запущен - выходим
+      return;
     } else {
-      //если не запущен - запускаем
       slider.slick({
         arrows: false,
         slidesToShow: 1.2,
@@ -36,9 +32,7 @@ $(window).on("load resize", function () {
       });
     }
   } else {
-    if (slider.hasClass("slick-initialized"))
-      //если ширина больше мобильной версии и слайдер включен - выключаем слайдер
-      slider.slick("unslick");
+    if (slider.hasClass("slick-initialized")) slider.slick("unslick");
   }
 });
 
